@@ -40,10 +40,8 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Datos de la persona " +
-                "Nombre: '" + nombre + '\'' +
+        return " Nombre: '" + nombre + '\'' +
                 ", Apellido: '" + apellido + '\'' +
-                ", Edad: " + edad +
-                '}';
+                ", Edad: '" + edad+"'";
     }
 }
