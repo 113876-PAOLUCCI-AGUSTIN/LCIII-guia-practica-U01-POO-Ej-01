@@ -37,4 +37,13 @@ public class Persona {
         this.apellido = apellido;
         this.edad = edad;
     }
+
+    @Override
+    public String toString() {
+        return "Datos de la persona " +
+                "Nombre: '" + nombre + '\'' +
+                ", Apellido: '" + apellido + '\'' +
+                ", Edad: " + edad +
+                '}';
+    }
 }

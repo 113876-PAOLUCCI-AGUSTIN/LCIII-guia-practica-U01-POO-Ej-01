@@ -4,7 +4,11 @@
  * Crear un programa que permita ingresar los datos de algunas personas por teclado y
  * con esos datos cree instancias y muestre por pantalla el estado de las mismas.
  */
+
 public class Main {
     public static void main(String[] args) {
+        Persona p01 = new Persona("Agustin","Paolucci",49);
+        System.out.println(p01.toString());
     }
+
 }
