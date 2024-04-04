@@ -29,4 +29,12 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, Integer edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
 }
