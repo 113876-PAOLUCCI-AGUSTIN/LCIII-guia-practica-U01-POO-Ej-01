@@ -9,18 +9,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Persona p01 = obtenerPersona();
+        Persona p02 = obtenerPersona();
+
+        System.out.println("Los datos de las personas ingresadas son: ");
+        System.out.println(p01); // IMP: NO HACE FALTA LLAMAR A .TOSTRING.
+        System.out.println(p02);
+    }
+
+    public static Persona obtenerPersona() {
         Scanner input = new Scanner(System.in);
-        Persona p01 = new Persona();
-
+        Persona objPersona = new Persona();
         System.out.println("Ingrese el nombre de la persona...");
-        p01.setNombre(input.nextLine());
-
-        System.out.println("Ingrese el apellido de " + p01.getNombre());
-        p01.setApellido(input.nextLine());
-
-        System.out.println("Ingrese la edad de " + p01.getNombre() +" "+ p01.getApellido());
-        p01.setEdad(input.nextInt());
-
-        System.out.println("Los datos de la persona ingresada son:"+ p01.toString());
+        objPersona.setNombre(input.nextLine());
+        System.out.println("Ingrese el apellido de " + objPersona.getNombre());
+        objPersona.setApellido(input.nextLine());
+        System.out.println("Ingrese la edad de " + objPersona.getNombre() +" "+ objPersona.getApellido());
+        objPersona.setEdad(input.nextInt());
+        return objPersona;
     }
 }
