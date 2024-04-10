@@ -10,11 +10,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Persona p01 = obtenerPersona();
-        Persona p02 = obtenerPersona();
 
         System.out.println("Los datos de las personas ingresadas son: ");
         System.out.println(p01); // IMP: NO HACE FALTA LLAMAR A .TOSTRING.
-        System.out.println(p02);
+
     }
 
     public static Persona obtenerPersona() {
@@ -26,6 +25,10 @@ public class Main {
         objPersona.setApellido(input.nextLine());
         System.out.println("Ingrese la edad de " + objPersona.getNombre() +" "+ objPersona.getApellido());
         objPersona.setEdad(input.nextInt());
+        System.out.println("Ingrese el peso de " + objPersona.getNombre() +" "+ objPersona.getApellido());
+        objPersona.setPeso(input.nextDouble());
+        System.out.println("Ingrese la altura de " + objPersona.getNombre() +" "+ objPersona.getApellido());
+        objPersona.setAltura(input.nextDouble());
         return objPersona;
     }
 }
